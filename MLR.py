@@ -6,6 +6,7 @@ import numpy as np
 #%matplotlib inline #used in jupyterlab
 
 
+
 #============================================DATA=======================================
 
 #===================================Understanding the data================================
@@ -23,7 +24,7 @@ import numpy as np
 # CO2 EMISSIONS (g/km) e.g. 182 --> low --> 0
 
 #=====================================Reading the data==================================
-df = pd.read_csv('FuelConsumption.csv')
+df = pd.read_csv('FuelConsumptionCo2.csv')
 # take a look at the dataset
 print(df.head())
 
@@ -36,4 +37,7 @@ plt.scatter(cdf.ENGINESIZE, cdf.CO2EMISSIONS,  color='blue')
 plt.xlabel("Engine size")
 plt.ylabel("Emission")
 plt.show()
+
+
+
 
