@@ -31,5 +31,9 @@ print(df.head())
 cdf = df[['ENGINESIZE','CYLINDERS','FUELCONSUMPTION_CITY','FUELCONSUMPTION_HWY','FUELCONSUMPTION_COMB','CO2EMISSIONS']]
 print(cdf.head(9))
 
-
+#========================plot Emission values with respect to Engine size========================
+plt.scatter(cdf.ENGINESIZE, cdf.CO2EMISSIONS,  color='blue')
+plt.xlabel("Engine size")
+plt.ylabel("Emission")
+plt.show()
 
