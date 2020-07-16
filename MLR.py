@@ -27,3 +27,9 @@ df = pd.read_csv('FuelConsumption.csv')
 # take a look at the dataset
 print(df.head())
 
+#================================Project Feature selection================================
+cdf = df[['ENGINESIZE','CYLINDERS','FUELCONSUMPTION_CITY','FUELCONSUMPTION_HWY','FUELCONSUMPTION_COMB','CO2EMISSIONS']]
+print(cdf.head(9))
+
+
+
